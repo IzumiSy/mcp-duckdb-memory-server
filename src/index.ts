@@ -7,8 +7,7 @@ import { homedir } from "os";
 import { existsSync, mkdirSync } from "fs";
 import { createMCPServer } from "./server";
 
-const main = async () => {
-  const logger: Logger = new NullLogger();
+const createManager = (logger: Logger) => {
   const knowledgeGraphManager = new DuckDBKnowledgeGraphManager(
     /**
      * Get the database file path based on environment variables or default location
@@ -39,8 +38,15 @@ const main = async () => {
     logger
   );
 
-  const server = createMCPServer(knowledgeGraphManager);
+  return knowledgeGraphManager;
+};
+
+const main = async () => {
+  const logger: Logger = new NullLogger();
+  const manager = createManager(logger);
+  const server = createMCPServer(manager);
   const transport = new StdioServerTransport();
+
   await server.connect(transport);
   logger.info("DuckDB Knowledge Graph MCP Server running on stdio");
 };

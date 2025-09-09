@@ -38,17 +38,17 @@
     "@duckdb/node-api": "1.2.0-alpha.15",
     "@modelcontextprotocol/sdk": "^1.6.0",
     "fuse.js": "^7.1.0",
-    "zod": "^4.1.1"
+    "zod": "^4.1.5"
   },
   "devDependencies": {
     "@changesets/cli": "^2.28.1",
     "@swc/core": "^1.13.5",
-    "@types/node": "^24.0.10",
-    "prettier": "^3.5.2",
+    "@types/node": "^24",
+    "prettier": "^3",
     "shx": "^0.4.0",
     "tsup": "^8.4.0",
     "typescript": "^5",
-    "vitest": "^3.0.7"
+    "vitest": "^3.2.4"
   },
   "packageManager": "pnpm@10.8.1",
   "engines": {

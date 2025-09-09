@@ -21,7 +21,9 @@ export const createMCPServer = (
     "create_entities",
     "Create multiple new entities in the knowledge graph",
     {
-      entities: z.array(EntityObject),
+      entities: z
+        .array(EntityObject)
+        .describe("An array of entities to create"),
     },
     async ({ entities }) => ({
       content: [
@@ -42,7 +44,9 @@ export const createMCPServer = (
     "create_relations",
     "Create multiple new relations between entities in the knowledge graph. Relations should be in active voice",
     {
-      relations: z.array(RelationObject),
+      relations: z
+        .array(RelationObject)
+        .describe("An array of relations to create"),
     },
     async ({ relations }) => ({
       content: [
@@ -63,7 +67,9 @@ export const createMCPServer = (
     "add_observations",
     "Add new observations to existing entities in the knowledge graph",
     {
-      observations: z.array(ObservationObject),
+      observations: z
+        .array(ObservationObject)
+        .describe("An array of observations to add"),
     },
     async ({ observations }) => ({
       content: [
@@ -101,16 +107,18 @@ export const createMCPServer = (
     "delete_observations",
     "Delete specific observations from entities in the knowledge graph",
     {
-      deletions: z.array(
-        z.object({
-          entityName: z
-            .string()
-            .describe("The name of the entity containing the observations"),
-          contents: z
-            .array(z.string())
-            .describe("An array of observations to delete"),
-        })
-      ),
+      deletions: z
+        .array(
+          z.object({
+            entityName: z
+              .string()
+              .describe("The name of the entity containing the observations"),
+            contents: z
+              .array(z.string())
+              .describe("An array of observations to delete"),
+          })
+        )
+        .describe("An array of observation deletions"),
     },
     async ({ deletions }) => {
       await knowledgeGraphManager.deleteObservations(deletions);

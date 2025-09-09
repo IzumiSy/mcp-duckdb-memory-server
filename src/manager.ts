@@ -210,7 +210,7 @@ export class DuckDBKnowledgeGraphManager
       const existingEntitiesData = existingEntitiesReader.getRows();
       const nameColumnIndex = 0; // name column is the first column
       const existingNames = new Set(
-        existingEntitiesData.map((row) => row[nameColumnIndex] as string)
+        existingEntitiesData.map((row: any) => row[nameColumnIndex] as string)
       );
 
       // Filter new entities
@@ -272,7 +272,7 @@ export class DuckDBKnowledgeGraphManager
       const entityNamesData = entityNamesReader.getRows();
       const nameColumnIndex = 0; // name column is the first column
       const entityNames = new Set(
-        entityNamesData.map((row) => row[nameColumnIndex] as string)
+        entityNamesData.map((row: any) => row[nameColumnIndex] as string)
       );
 
       // Filter valid relations (both from and to entities must exist)
@@ -288,7 +288,7 @@ export class DuckDBKnowledgeGraphManager
       const existingRelationsData = existingRelationsReader.getRows();
 
       // Convert results to an array of Relation objects
-      const existingRelations = existingRelationsData.map((row) => {
+      const existingRelations = existingRelationsData.map((row: any) => {
         return {
           from: row[0] as string,
           to: row[1] as string,
@@ -300,7 +300,7 @@ export class DuckDBKnowledgeGraphManager
       const newRelations = validRelations.filter(
         (newRel) =>
           !existingRelations.some(
-            (existingRel) =>
+            (existingRel: any) =>
               existingRel.from === newRel.from &&
               existingRel.to === newRel.to &&
               existingRel.relationType === newRel.relationType
@@ -364,7 +364,7 @@ export class DuckDBKnowledgeGraphManager
           const contentColumnIndex = 0; // content column is the first column
           const existingObservations = new Set(
             existingObservationsData.map(
-              (row) => row[contentColumnIndex] as string
+              (row: any) => row[contentColumnIndex] as string
             )
           );
 
@@ -577,7 +577,7 @@ export class DuckDBKnowledgeGraphManager
     const relationsData = relationsReader.getRows();
 
     // Convert results to an array of Relation objects
-    const relations = relationsData.map((row) => {
+    const relations = relationsData.map((row: any) => {
       return {
         from: row[0] as string,
         to: row[1] as string,
@@ -608,7 +608,7 @@ export class DuckDBKnowledgeGraphManager
     const relationsData = relationsReader.getRows();
 
     // Convert results to an array of Relation objects
-    const relations = relationsData.map((row) => {
+    const relations = relationsData.map((row: any) => {
       return {
         from: row[0] as string,
         to: row[1] as string,
@@ -691,7 +691,7 @@ export class DuckDBKnowledgeGraphManager
         const relationsData = relationsReader.getRows();
 
         // Convert results to an array of Relation objects
-        const relations = relationsData.map((row) => {
+        const relations = relationsData.map((row: any) => {
           return {
             from: row[0] as string,
             to: row[1] as string,

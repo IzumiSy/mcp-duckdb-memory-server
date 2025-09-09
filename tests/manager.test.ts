@@ -1,4 +1,4 @@
-import { describe, it, expect, beforeEach, afterEach, vi } from "vitest";
+import { describe, it, expect, beforeEach, afterEach } from "vitest";
 import { DuckDBKnowledgeGraphManager } from "../src/manager";
 import { Entity, Relation, Observation } from "../src/types";
 import { join } from "path";
@@ -234,7 +234,7 @@ describe("DuckDBFuseKnowledgeGraphManager", () => {
       ];
 
       // Add observations
-      const result = await manager.addObservations(duplicateObservations);
+      await manager.addObservations(duplicateObservations);
 
       // Verify graph
       const graph = await manager.readGraph();

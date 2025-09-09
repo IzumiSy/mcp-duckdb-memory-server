@@ -1,5 +1,3 @@
-import { Server } from "@modelcontextprotocol/sdk/server/index.js";
-
 // アプリケーション内で使用するログレベル
 export enum LogLevel {
   DEBUG = "debug",
@@ -7,14 +5,6 @@ export enum LogLevel {
   WARN = "warning",
   ERROR = "error",
 }
-
-// LogLevelからMcpLogLevelへの変換マップ
-const logLevelToMcpLogLevel = {
-  [LogLevel.DEBUG]: "debug",
-  [LogLevel.INFO]: "info",
-  [LogLevel.WARN]: "warning",
-  [LogLevel.ERROR]: "error",
-} as const;
 
 // 文字列からLogLevelへの変換関数
 export function stringToLogLevel(level: string): LogLevel {
@@ -41,23 +31,23 @@ export interface LogData {
 
 // Nullロガー
 export class NullLogger implements Logger {
-  debug(message: string, payload?: Record<string, unknown>): void {
+  debug(): void {
     // No-op
   }
 
-  info(message: string, payload?: Record<string, unknown>): void {
+  info(): void {
     // No-op
   }
 
-  warn(message: string, payload?: Record<string, unknown>): void {
+  warn(): void {
     // No-op
   }
 
-  error(message: string, payload?: Record<string, unknown>): void {
+  error(): void {
     // No-op
   }
 
-  setLevel(level: LogLevel): void {
+  setLevel(): void {
     // No-op
   }
 }

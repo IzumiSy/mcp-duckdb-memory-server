@@ -16,5 +16,6 @@ jobs:
           cache-dependency-path: ./pnpm-lock.yaml
           node-version-file: './package.json'
       - run: pnpm install
+      - run: pnpm type-check
       - run: pnpm test
       - run: pnpm build

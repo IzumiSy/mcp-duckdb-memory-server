@@ -53,7 +53,7 @@ export class DuckDBKnowledgeGraphManager
         return await conn.runAndReadAll(sql, params);
       },
       [Symbol.dispose]: () => {
-        conn.close();
+        conn.closeSync();
       },
     };
   }

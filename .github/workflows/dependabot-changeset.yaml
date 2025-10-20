@@ -1,0 +1,19 @@
+name: Add Changeset to Dependabot PRs
+
+on:
+  pull_request:
+    types: [opened, synchronize]
+
+concurrency: ${{ github.workflow }}-${{ github.ref }}
+
+jobs:
+  add-changeset:
+    if: github.actor == 'dependabot[bot]'
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - uses: IzumiSy/simple-dependabot-changeset@main
+        with:
+          pkgName: '@izumisy/mcp-duckdb-memory-server'

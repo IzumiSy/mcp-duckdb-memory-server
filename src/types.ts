@@ -1,4 +1,4 @@
-import { z } from "zod";
+import z from "zod";
 
 /**
  * The primary nodes in the knowledge graph

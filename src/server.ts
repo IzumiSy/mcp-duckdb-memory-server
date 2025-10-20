@@ -5,7 +5,7 @@ import {
   ObservationObject,
   RelationObject,
 } from "./types";
-import { z } from "zod";
+import z from "zod";
 
 export const createMCPServer = (
   knowledgeGraphManager: KnowledgeGraphManagerInterface

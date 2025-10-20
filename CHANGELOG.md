@@ -1,5 +1,11 @@
 # @izumisy/mcp-duckdb-memory-server
 
+## 1.1.4
+
+### Patch Changes
+
+- 0648944: Update @duckdb/node-api, @modelcontextprotocol/sdk, and pnpm version"
+
 ## 1.1.3
 
 ### Patch Changes

@@ -1,5 +1,13 @@
 # @izumisy/mcp-duckdb-memory-server
 
+## 1.1.5
+
+### Patch Changes
+
+- 5edd56e: Bump @swc/core from 1.13.5 to 1.14.0
+- 6895d34: Bump @types/node from 24.8.1 to 24.10.0
+- 05b3ecc: Bump @modelcontextprotocol/sdk from 1.20.1 to 1.20.2
+
 ## 1.1.4
 
 ### Patch Changes

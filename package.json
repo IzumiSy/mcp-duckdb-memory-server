@@ -41,6 +41,7 @@
     "zod": "^3"
   },
   "devDependencies": {
+    "@cfworker/json-schema": "^4.1.1",
     "@changesets/cli": "^2.28.1",
     "@swc/core": "^1.13.5",
     "@types/node": "^24",

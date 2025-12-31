@@ -1,5 +1,11 @@
 # @izumisy/mcp-duckdb-memory-server
 
+## 1.1.7
+
+### Patch Changes
+
+- c60d42e: Fix main field in package.json
+
 ## 1.1.6
 
 ### Patch Changes

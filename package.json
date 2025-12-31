@@ -12,7 +12,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "pnpm build && npx @modelcontextprotocol/inspector pnpm start",
-    "build": "tsup src/index.ts && shx chmod +x dist/index.mjs",
+    "build": "tsdown src/index.ts && shx chmod +x dist/index.mjs",
     "start": "node dist/index.mjs",
     "prepare": "npm run build",
     "test": "vitest run",
@@ -47,7 +47,7 @@
     "@types/node": "^25",
     "prettier": "^3",
     "shx": "^0.4.0",
-    "tsup": "^8.4.0",
+    "tsdown": "^0.18.4",
     "typescript": "^5",
     "vitest": "^3.2.4"
   },

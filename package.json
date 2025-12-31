@@ -53,6 +53,6 @@
   },
   "packageManager": "pnpm@10.18.3",
   "engines": {
-    "node": "22.x"
+    "node": "24.x"
   }
 }

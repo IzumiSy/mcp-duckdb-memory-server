@@ -5,7 +5,7 @@ WORKDIR /app
 
 COPY package.json ./
 COPY pnpm-lock.yaml ./
-COPY tsup.config.ts ./
+COPY tsdown.config.ts ./
 COPY src ./src
 
 RUN npm install -g pnpm

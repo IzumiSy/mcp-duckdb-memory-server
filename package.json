@@ -9,7 +9,7 @@
     "url": "git+https://github.com/IzumiSy/mcp-duckdb-memory-server.git"
   },
   "type": "module",
-  "main": "index.js",
+  "main": "dist/index.mjs",
   "scripts": {
     "dev": "pnpm build && npx @modelcontextprotocol/inspector pnpm start",
     "build": "tsdown src/index.ts && shx chmod +x dist/index.mjs",

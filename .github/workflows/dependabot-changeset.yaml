@@ -14,6 +14,6 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - uses: IzumiSy/simple-dependabot-changeset@main
         with:
-          pkgName: '@izumisy/mcp-duckdb-memory-server'
+          fetch-depth: 0
+      - uses: IzumiSy/deps2changesets@main

@@ -1,5 +1,11 @@
 # @izumisy/mcp-duckdb-memory-server
 
+## 1.1.8
+
+### Patch Changes
+
+- d5749ea: Updated [@modelcontextprotocol/sdk](https://www.npmjs.com/package/@modelcontextprotocol/sdk) (^1.20.1 -> ^1.25.1)
+
 ## 1.1.7
 
 ### Patch Changes

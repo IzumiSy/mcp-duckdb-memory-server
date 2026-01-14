@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/izumisy-mcp-duckdb-memory-server-badge.png)](https://mseep.ai/app/izumisy-mcp-duckdb-memory-server)
+
 # MCP DuckDB Knowledge Graph Memory Server
 
 [![Test](https://github.com/izumisy/mcp-duckdb-memory-server/actions/workflows/test.yaml/badge.svg?branch=main)](https://github.com/izumisy/mcp-duckdb-memory-server/actions/workflows/test.yaml)

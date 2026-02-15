@@ -49,7 +49,7 @@
     "shx": "^0.4.0",
     "tsdown": "^0.20.3",
     "typescript": "^5",
-    "vitest": "^4.0.17"
+    "vitest": "^4.0.18"
   },
   "packageManager": "pnpm@10.18.3",
   "engines": {

@@ -1,5 +1,7 @@
 # MCP DuckDB Knowledge Graph Memory Server
 
+[![SafeSkill 92/100](https://img.shields.io/badge/SafeSkill-92%2F100_Verified%20Safe-brightgreen)](https://safeskill.dev/scan/izumisy-mcp-duckdb-memory-server)
+
 [![Test](https://github.com/izumisy/mcp-duckdb-memory-server/actions/workflows/test.yaml/badge.svg?branch=main)](https://github.com/izumisy/mcp-duckdb-memory-server/actions/workflows/test.yaml)
 [![smithery badge](https://smithery.ai/badge/@IzumiSy/mcp-duckdb-memory-server)](https://smithery.ai/server/@IzumiSy/mcp-duckdb-memory-server)
 ![NPM Version](https://img.shields.io/npm/v/%40izumisy%2Fmcp-duckdb-memory-server)

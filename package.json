@@ -37,7 +37,7 @@
   "dependencies": {
     "@duckdb/node-api": "1.4.1-r.5",
     "@modelcontextprotocol/sdk": "^1.29.0",
-    "fuse.js": "^7.1.0",
+    "fuse.js": "^7.3.0",
     "zod": "^3"
   },
   "devDependencies": {

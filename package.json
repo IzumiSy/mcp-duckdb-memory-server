@@ -48,7 +48,7 @@
     "prettier": "^3",
     "shx": "^0.4.0",
     "tsdown": "^0.21.7",
-    "typescript": "^5",
+    "typescript": "^6",
     "vitest": "^4.0.18"
   },
   "packageManager": "pnpm@10.18.3",

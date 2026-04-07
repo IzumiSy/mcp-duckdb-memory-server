@@ -42,7 +42,7 @@
   },
   "devDependencies": {
     "@cfworker/json-schema": "^4.1.1",
-    "@changesets/cli": "^2.28.1",
+    "@changesets/cli": "^2.30.0",
     "@swc/core": "^1.15.24",
     "@types/node": "^25",
     "prettier": "^3",
